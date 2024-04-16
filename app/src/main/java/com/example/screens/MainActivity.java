@@ -18,8 +18,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         buttonToSecondActivity = findViewById(R.id.goToSecondActivity); // Finds the to second activity button
 
-
-
         // Sets a OnClickListener for the to second activity button
         buttonToSecondActivity.setOnClickListener(new View.OnClickListener() {
             @Override
