@@ -7,15 +7,50 @@
     android:layout_height="match_parent"
     tools:context=".SecondActivity">
 
-    <Button
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/goToMainActivity"
+        android:id="@+id/vehicleText"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:text="@string/toMain_name"
+        app:layout_constraintBottom_toTopOf="@id/colorText"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/typeOfVehicleText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/vehicleText"
+        app:layout_constraintBottom_toTopOf="@id/colorText"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/vehicle_type_text"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/colorText"
+        app:layout_constraintTop_toBottomOf="@id/vehicleText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textView"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/helpTextColor"
+        app:layout_constraintBottom_toTopOf="@id/textView"
+        app:layout_constraintEnd_toEndOf="@id/colorText"
+        app:layout_constraintTop_toBottomOf="@id/vehicleText"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/car_color_text"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
         />
 
     <TextView
@@ -23,10 +58,32 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/infoText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/goToMainActivity"
+        app:layout_constraintTop_toBottomOf="@+id/colorText"
         android:text="@string/second_text"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/infoText"
+        app:layout_constraintBottom_toTopOf="@id/goToMainActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        android:text="@string/info_to_main_text"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/goToMainActivity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/infoText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/to_main_text"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

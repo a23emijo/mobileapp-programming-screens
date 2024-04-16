@@ -1,7 +1,10 @@
 <resources>
     <string name="app_name">Screens</string>
-    <string name="toSecond_name">Go to second activity!</string>
-    <string name="toMain_name">Go to main activity!</string>
+    <string name="to_second_text">Go to second activity!</string>
+    <string name="to_main_text">Go back to main activity!</string>
     <string name="main_text">This is the main activity!</string>
     <string name="second_text">This is the second activity!</string>
+    <string name="info_to_main_text">Click on the arrow in the top left corner \n or on the back to main button!</string>
+    <string name="vehicle_type_text">The vehicle type:</string>
+    <string name="car_color_text">The color of the vehicle:</string>
 </resources>
